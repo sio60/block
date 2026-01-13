@@ -1,0 +1,10 @@
+{
+  "compatibility_date": "2025-01-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tetris-demo-db",
+      "database_id": "913d44e7-01e0-4a93-b4b3-1cc00ae42188"
+    }
+  ]
+}
