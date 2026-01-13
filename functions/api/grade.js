@@ -3,9 +3,9 @@ export async function onRequestPost({ request }) {
     const body = await request.json().catch(() => ({}));
     const answers = Array.isArray(body.answers) ? body.answers : [];
 
-    const correct = Array(10).fill(3);
+const correct = [1, 0, 2, 0, 1, 3, 2, 2, 0, 1];
 
-    const weights = Array(10).fill(10);
+const weights = Array(10).fill(10);
     const total = weights.reduce((a, b) => a + b, 0);
 
     let score = 0;
@@ -54,7 +54,6 @@ export async function onRequestPost({ request }) {
   }
 }
 
-// (선택) GET으로 들어오면 안내
 export function onRequestGet() {
   return new Response(
     JSON.stringify({ ok: false, error: "POST only" }),
