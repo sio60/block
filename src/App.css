@@ -1,4 +1,4 @@
-/* 전체 배경/레이아웃 */
+
 .page {
   min-height: 100dvh;
   width: 100%;
@@ -41,7 +41,7 @@ h1 {
   line-height: 1.5;
 }
 
-/* 카드: 여기서 핵심! 카드 안 기본 글씨색을 검정으로 고정 */
+/* 카드: 카드 안 기본 글씨색을 검정으로 고정 */
 .card {
   background: #ffffff;
   color: #111827;               /* ✅ 흰글씨 상속 방지 */
@@ -60,7 +60,7 @@ h1 {
 .qTitle {
   margin: 16px 0 12px;
   font-size: clamp(16px, 1.6vw, 20px);
-  color: #111827;               /* ✅ 명시 */
+  color: #111827;
   line-height: 1.25;
 }
 
